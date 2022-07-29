@@ -1,0 +1,2 @@
+class Academicyear < ApplicationRecord
+end

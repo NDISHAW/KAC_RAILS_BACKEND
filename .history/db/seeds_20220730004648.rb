@@ -25,48 +25,32 @@ Academicyear.create([
     },
     {
         name: "tenty twenty three",
-        schoool_id: 1
+        schoool_id: 3
     }
 ])
 puts "🎋🎋🎋🎋🎋🎋🎋🎋🎋🎋🎋🎋🎋🎋🎋🎋🎋🎋🎋"
 puts "🌴🌴🌴Done! creating AcademicYear🌴🌴🌴"
 
 
-puts "Creating Levels 🌱🌱🌱🌱🌱🌱🌱🌱🌱"
+# puts "Creating Levels 🌱🌱🌱🌱🌱🌱🌱🌱🌱"
 
-Level.create([
-    {
-        title: "PLAY GROUP",
-        name: "PG"
-    },
-    {
-        title: "PRE PRIMARY ONE",
-        name: "PP1"
-    },
-    {
-        title: "PRE PRIMARY TO",
-        name: "PP2"
-    },
-    {
-        title: "GRADE ONE",
-        name: "G1"
-    },
-    {
-        title: "GRADE TWO",
-        name: "G2"
-    },
-    {
-        title: "GRADE THREE",
-        name: "G3"
-    },
-    {
-        title: "GRADE FOUR",
-        name: "G4"
-    }
-])
+# Level.create([
+#     {
+#         name: "tenty twenty one",
+#         schoool_id: 1
+#     },
+#     {
+#         name: "tenty twenty two",
+#         schoool_id: 1
+#     },
+#     {
+#         name: "tenty twenty three",
+#         schoool_id: 1
+#     }
+# ])
 
-puts "🎋🎋🎋🎋🎋🎋🎋🎋🎋🎋🎋🎋🎋🎋🎋🎋"
-puts "🌴🌴🌴Done! creating Levels🌴🌴🌴"
+# puts "🎋🎋🎋🎋🎋🎋🎋🎋🎋🎋🎋🎋🎋🎋🎋🎋"
+# puts "🌴🌴🌴Done! creating Levels🌴🌴🌴"
 
 puts "🎋🎋🎋🎋🎋🎋🎋🎋🎋🎋🎋🎋🎋🎋🎋"
 puts "🌴🌴🌴🌴Done! seeding🌴🌴🌴🌴🌴"

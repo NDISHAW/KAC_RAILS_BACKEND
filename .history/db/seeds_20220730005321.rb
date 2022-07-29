@@ -37,7 +37,7 @@ puts "Creating Levels 🌱🌱🌱🌱🌱🌱🌱🌱🌱"
 Level.create([
     {
         title: "PLAY GROUP",
-        name: "PG"
+        name: ""PG""
     },
     {
         title: "PRE PRIMARY ONE",
@@ -61,7 +61,7 @@ Level.create([
     },
     {
         title: "GRADE FOUR",
-        name: "G4"
+        name: "PG"
     }
 ])
 
