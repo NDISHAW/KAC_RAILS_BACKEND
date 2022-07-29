@@ -1,3 +1,5 @@
+Schoool.destroy_all
+
 puts "Creating Schoool 🌱🌱🌱🌱🌱🌱🌱🌱🌱"
 puts " 🌱🌱🌱🌱🌱🌱🌱🌱🌱"
 puts " 🌱🌱🌱🌱🌱🌱🌱🌱🌱"
@@ -13,6 +15,7 @@ puts "🌴🌴🌴Done creating school🌴🌴🌴"
 puts "Creating AcademicYear🌱🌱🌱🌱🌱🌱🌱🌱🌱"
 puts " 🌱🌱🌱🌱🌱🌱🌱🌱🌱"
 puts " 🌱🌱🌱🌱🌱🌱🌱🌱🌱"
+Academicyear.destroy_all
 
 Academicyear.create([
     {
@@ -33,35 +36,42 @@ puts "🌴🌴🌴Done! creating AcademicYear🌴🌴🌴"
 
 
 puts "Creating Levels 🌱🌱🌱🌱🌱🌱🌱🌱🌱"
-
+Level.destroy_all
 Level.create([
     {
         title: "PLAY GROUP",
-        name: "PG"
+        name: "PG",
+        academicyear_id: 1 
     },
     {
         title: "PRE PRIMARY ONE",
-        name: "PP1"
+        name: "PP1",
+        academicyear_id: 1
     },
     {
         title: "PRE PRIMARY TO",
-        name: "PP2"
+        name: "PP2",
+        academicyear_id: 1
     },
     {
         title: "GRADE ONE",
-        name: "G1"
+        name: "G1",
+        academicyear_id: 1
     },
     {
         title: "GRADE TWO",
-        name: "G2"
+        name: "G2",
+        academicyear_id: 1
     },
     {
         title: "GRADE THREE",
-        name: "G3"
+        name: "G3",
+        academicyear_id: 1
     },
     {
         title: "GRADE FOUR",
-        name: "G4"
+        name: "G4",
+        academicyear_id: 1
     }
 ])
 

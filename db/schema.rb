@@ -27,10 +27,10 @@ ActiveRecord::Schema.define(version: 2022_07_29_212617) do
     t.string "title"
     t.string "name"
     t.bigint "schoool_id"
-    t.bigint "academicyears_id"
+    t.bigint "academicyear_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["academicyears_id"], name: "index_levels_on_academicyears_id"
+    t.index ["academicyear_id"], name: "index_levels_on_academicyear_id"
     t.index ["schoool_id"], name: "index_levels_on_schoool_id"
   end
 
@@ -42,6 +42,6 @@ ActiveRecord::Schema.define(version: 2022_07_29_212617) do
   end
 
   add_foreign_key "academicyears", "schoools"
-  add_foreign_key "levels", "academicyears", column: "academicyears_id"
+  add_foreign_key "levels", "academicyears"
   add_foreign_key "levels", "schoools"
 end
