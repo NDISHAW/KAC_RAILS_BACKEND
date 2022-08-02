@@ -10,38 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_07_29_212617) do
+ActiveRecord::Schema.define(version: 0) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "academicyears", force: :cascade do |t|
-    t.string "name"
-    t.bigint "schoool_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["schoool_id"], name: "index_academicyears_on_schoool_id"
-  end
-
-  create_table "levels", force: :cascade do |t|
-    t.string "title"
-    t.string "name"
-    t.bigint "schoool_id"
-    t.bigint "academicyear_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["academicyear_id"], name: "index_levels_on_academicyear_id"
-    t.index ["schoool_id"], name: "index_levels_on_schoool_id"
-  end
-
-  create_table "schoools", force: :cascade do |t|
-    t.string "name"
-    t.string "location"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  add_foreign_key "academicyears", "schoools"
-  add_foreign_key "levels", "academicyears"
-  add_foreign_key "levels", "schoools"
 end

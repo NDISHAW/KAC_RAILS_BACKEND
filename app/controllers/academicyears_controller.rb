@@ -4,7 +4,7 @@ class AcademicyearsController < ApplicationController
 
     def index
         academicYears = Academicyear.all
-        render json: academicYears,include: :schoool
+        render json: academicYears
     end
     def show
         academicYears = Academicyear.find(params[:id])
