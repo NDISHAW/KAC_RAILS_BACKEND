@@ -1,0 +1,3 @@
+class StudentSchoolfee < ApplicationRecord
+    
+end

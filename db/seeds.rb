@@ -1,10 +1,9 @@
-
 puts
-puts "Seeding Schoool 🌱🌱🌱🌱🌱🌱🌱🌱🌱"
+puts "Seeding school 🌱🌱🌱🌱🌱🌱🌱🌱🌱"
 puts "        🌱🌱🌱🌱🌱🌱🌱🌱🌱"
 puts "        🌱🌱🌱🌱🌱🌱🌱🌱🌱"
-Schoool.destroy_all
-Schoool.create(
+School.destroy_all
+School.create(
     name: "Kibagare Academy Center(CBo)",
     location: "https://maps.app.goo.gl/1xJssTREDG8xeSNaA",
 )
@@ -12,81 +11,57 @@ Schoool.create(
 puts "🌴🌴🌴 Seeding school. Done!!!🌴🌴🌴"
 puts
 
-puts "Seeding AcademicYear🌱🌱🌱🌱🌱🌱🌱🌱🌱"
-puts "        🌱🌱🌱🌱🌱🌱🌱🌱🌱"
-puts "        🌱🌱🌱🌱🌱🌱🌱🌱🌱"
-Academicyear.destroy_all
-
-Academicyear.create([
-    {
-        name: "tenty twenty one",
-        schoool_id: 1
-    },
-    {
-        name: "tenty twenty two",
-        schoool_id: 1
-    },
-    {
-        name: "tenty twenty three",
-        schoool_id: 1
-    }
-])
-puts "🌴🌴🌴 Seeding AcademicYear. Done!!🌴🌴🌴"
 
 puts ""
-puts "Seeding Levels 🌱🌱🌱🌱🌱🌱🌱🌱🌱"
+puts "Seeding Classrooms 🌱🌱🌱🌱🌱🌱🌱🌱🌱"
 puts "        🌱🌱🌱🌱🌱🌱🌱🌱🌱"
 puts "        🌱🌱🌱🌱🌱🌱🌱🌱🌱"
 # Level.destroy_all
 
-Level.create([
+Classroom.create([
     {
         title: "PLAY GROUP",
-        name: "PG",
-        academicyear_id: 1 ,
-        schoool_id: 1
+        name: "PG/2020",
+        school_id: 1 ,
+        student_id: 1,
+
     },
     {
         title: "PRE PRIMARY ONE",
-        name: "PP1",
-        academicyear_id: 1,
-        schoool_id: 1
+        name: "PP1/2020",
+        school_id: 1 
     },
     {
-        title: "PRE PRIMARY TO",
-        name: "PP2",
-        academicyear_id: 1,
-        schoool_id: 1
+        title: "PRE PRIMARY TWO",
+        name: "PP2/2020",
+        school_id: 1 
     },
     {
         title: "GRADE ONE",
-        name: "G1",
-        academicyear_id: 1,
-        schoool_id: 1
+        name: "G1/2020",
+        school_id: 1 
     },
     {
         title: "GRADE TWO",
-        name: "G2",
-        academicyear_id: 1,
-        schoool_id: 1
+        name: "G2/2020",
+        school_id: 1 
     },
     {
         title: "GRADE THREE",
-        name: "G3",
-        academicyear_id: 1,
-        schoool_id: 1
+        name: "G3/2020",
+        school_id: 1 
     },
     {
         title: "GRADE FOUR",
-        name: "G4",
-        academicyear_id: 1,
-        schoool_id: 1
+        name: "G4/2020",
+        school_id: 1 
     }
 ])
 
-puts "🌴🌴🌴Seeding Levels.Done!!🌴🌴🌴"
+puts "🌴🌴🌴Seeding Classrooms.Done!!🌴🌴🌴"
 
 puts 
+
 puts "Seeding Student"
 puts "        🌱🌱🌱🌱🌱🌱🌱🌱🌱"
 puts "        🌱🌱🌱🌱🌱🌱🌱🌱🌱"
@@ -94,65 +69,121 @@ Student.destroy_all
 
 Student.create!([
     {
+        id: 1,
         names: "Hannah Njambi",
         DateOfBirth: "2010-8-9",
-        level_id: 1,
-        parent_id:1
+        classroom_id: 1
     },
     {
+        id: 2,
         names: "Abel Onyango",
         DateOfBirth: "2011-8-9",
-        level_id: 1,
-        parent_id: 2
+        classroom_id: 1
     },
     {
+        id: 3,
         names: "Precious Njambi",
         DateOfBirth: "2010-5-8",
-        level_id: 1,
-        parent_id: 3
+        classroom_id: 1
     },
     {
+        id: 4,
         names: "ali Hasssan",
         DateOfBirth: "2010-8-9",
-        level_id: 2,
-        parent_id:4
+        classroom_id: 2
     },
     {
+        id: 5,
         names: "Fridah Gasha",
         DateOfBirth: "2011-8-9",
-        level_id: 2,
-        parent_id: 5
+        classroom_id: 2
     },
     {
+        id: 6,
         names: "Alex Korir",
         DateOfBirth: "2010-5-8",
-        level_id: 2,
-        parent_id: 6
+        classroom_id: 2
     },
     {
+        id: 7,
         names: "Joho Hasssan",
         DateOfBirth: "2010-8-9",
-        level_id: 3,
-        parent_id:7
+        classroom_id: 3
     },
     {
+        id: 8,
         names: "Brian Kariuki",
         DateOfBirth: "2011-8-9",
-        level_id: 3,
-        parent_id: 8
+        classroom_id: 3
     },
     {
+        id: 9,
         names: "Alex Mwenda",
         DateOfBirth: "2010-5-8",
-        level_id: 3,
-        parent_id: 9
+        classroom_id: 3
     }
 ])
  
 puts "🌴🌴🌴 Seeding Student. Done!!🌴🌴🌴"
 puts 
+puts ""
+puts "Seeding Classrooms 🌱🌱🌱🌱🌱🌱🌱🌱🌱"
+puts "        🌱🌱🌱🌱🌱🌱🌱🌱🌱"
+puts "        🌱🌱🌱🌱🌱🌱🌱🌱🌱"
+# Level.destroy_all
 
+Schoolfee.create([
+    {
+        student_id: 1,
+        description: "PG/2020",
+        classroom_id: 1 ,
+        ammount: 300
 
-puts "🌴🌴🌴🌴🌴🌴🌴🌴🌴🌴🌴🌴🌴🌴🌴"
-puts "🌴🌴🌴🌴Done! seeding🌴🌴🌴🌴🌴"
-puts "🌴🌴🌴🌴🌴🌴🌴🌴🌴🌴🌴🌴🌴🌴🌴"
+    },
+    {
+        student_id: 3,
+        description: "PP1/2020",
+        classroom_id: 1 ,
+        ammount: 300
+
+    },
+    {
+        student_id: 2,
+        description: "PP2/2020",
+        classroom_id: 1 ,
+        ammount: 300
+
+    },
+    {
+        student_id: 1,
+        description: "G1/2020",
+        classroom_id: 1 ,
+        ammount: 300
+
+    },
+    {
+        student_id: 4,
+        description: "G2/2020",
+        classroom_id: 2 ,
+        ammount: 300
+
+    },
+    {
+        student_id: 5,
+        description: "G3/2020",
+        classroom_id: 2 ,
+        ammount: 300
+
+    },
+    {
+        student_id: 8,
+        description: "G4/2020",
+        classroom_id: 3 ,
+        ammount: 300
+
+    }
+])
+
+puts "🌴🌴🌴Seeding Schoolfees.Done!!🌴🌴🌴"
+
+puts 
