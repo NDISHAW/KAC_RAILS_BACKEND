@@ -151,7 +151,7 @@ Schoolfee.create([
         student_id: 2,
         description: "PP2/2020",
         classroom_id: 1 ,
-        ammount: 300
+        ammount: 400
 
     },
     {
@@ -185,5 +185,62 @@ Schoolfee.create([
 ])
 
 puts "🌴🌴🌴Seeding Schoolfees.Done!!🌴🌴🌴"
+
+puts 
+
+puts 
+puts ""
+puts "Seeding student_schoolfees 🌱🌱🌱🌱🌱🌱🌱🌱🌱"
+puts "        🌱🌱🌱🌱🌱🌱🌱🌱🌱"
+puts "        🌱🌱🌱🌱🌱🌱🌱🌱🌱"
+# Level.destroy_all
+
+StudentSchoolfee.create([
+    {
+        student_id: 1,
+        classroom_id: 1 ,
+        schoolfee_id: 1
+
+    },
+    {
+        student_id: 3,
+
+        classroom_id: 1 ,
+        schoolfee_id: 2
+
+    },
+    {
+        student_id: 2,
+        classroom_id: 1 ,
+        schoolfee_id: 3
+
+    },
+    {
+        student_id: 1,
+        classroom_id: 1 ,
+        schoolfee_id: 4
+
+    },
+    {
+        student_id: 4,
+        classroom_id: 2 ,
+        schoolfee_id: 5
+
+    },
+    {
+        student_id: 5,
+        classroom_id: 2 ,
+        schoolfee_id: 6
+
+    },
+    {
+        student_id: 8,
+        classroom_id: 3 ,
+        schoolfee_id: 7
+
+    }
+])
+
+puts "🌴🌴🌴Seeding student_schoolfees.Done!!🌴🌴🌴"
 
 puts 

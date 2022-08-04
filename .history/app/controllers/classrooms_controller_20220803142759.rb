@@ -4,7 +4,7 @@ class ClassroomsController < ApplicationController
 
     def index
         classroom = Classroom.all
-        render json: classroom, include: :students
+        render json: classroom, include: :students, 
     end
     def show
         classroom = Classroom.find(params[:id])

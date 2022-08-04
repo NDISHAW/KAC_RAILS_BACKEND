@@ -3,4 +3,5 @@ class StudentSchoolfeeSerializer < ActiveModel::Serializer
 
   belongs_to :student
   belongs_to :schoolfee
+  belongs_to :schoolfee
 end

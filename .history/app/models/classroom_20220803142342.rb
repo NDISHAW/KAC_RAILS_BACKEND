@@ -3,6 +3,6 @@ class Classroom < ApplicationRecord
 
     has_many :students
     has_many :schoolfees, through: :students
-    has_many :student_schoolfees, through: :students
+    has_many :student, through: :students
 
 end

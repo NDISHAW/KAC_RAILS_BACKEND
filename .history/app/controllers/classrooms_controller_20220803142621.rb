@@ -8,7 +8,7 @@ class ClassroomsController < ApplicationController
     end
     def show
         classroom = Classroom.find(params[:id])
-        render json: classroom, include: :schoolfees
+        render json: classroom, include: :student_schoolfees
     end
 
     private
