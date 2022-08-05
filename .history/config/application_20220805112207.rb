@@ -40,7 +40,7 @@ module ReactRailsApiProjectTemplate
     #PRODUCTION
     config.middleware.insert_before 0, Rack::Cors do
       allow do
-        origins 'https://kac-rails-client-9q83p2x50-ndishaw.vercel.app/'
+        origins 'https://kac-rails-client-9q83p2x50-ndishaw.vercel.app//'
         resource '*', headers: :any, methods: [:get, :post, :patch, :put, :delete, :options]
       end
     end
