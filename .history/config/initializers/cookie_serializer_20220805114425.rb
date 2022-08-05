@@ -4,7 +4,7 @@ Rails.application.config.action_dispatch.cookies_serializer = :hybrid
 if Rails.env === 'production' 
     Rails.application.config.session_store :cookie_store, key: 'kacrailsserver', domain: 'https://kac-rails-client-9q83p2x50-ndishaw.vercel.app/'
   else
-    Rails.application.config.session_store :cookie_store, key: 'kacrailsserver'
+    Rails.application.config.session_store :cookie_store, key: '_name-of-your-app'
   end
 end
 

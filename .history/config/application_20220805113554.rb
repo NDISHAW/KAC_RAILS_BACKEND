@@ -32,19 +32,19 @@ module ReactRailsApiProjectTemplate
     #DEVELOPMENT
     config.middleware.insert_before 0, Rack::Cors do
       allow do
-        origins 'http://localhost:3002/'
+        origins 'https://kac-rails-client.vercel.app/'
         resource '*', headers: :any, methods: [:get, :post, :patch, :put, :delete, :options]
       end
     end
 
-    #PRODUCTION
-    config.middleware.insert_before 0, Rack::Cors do
-      allow do
-        origins 'https://kac-rails-client-9q83p2x50-ndishaw.vercel.app/'
-        resource '*', headers: :any, methods: [:get, :post, :patch, :put, :delete, :options]
-      end
-    end
-    Initialize configuration defaults for originally generated Rails version.
+    # #PRODUCTION
+    # config.middleware.insert_before 0, Rack::Cors do
+    #   allow do
+    #     origins 'https://YOUR-APP-NAME.netlify.com/'
+    #     resource '*', headers: :any, methods: [:get, :post, :patch, :put, :delete, :options]
+    #   end
+    # end
+    # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.1
 
     # Configuration for the application, engines, and railties goes here.
