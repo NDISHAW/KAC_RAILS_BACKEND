@@ -1,3 +1,4 @@
+# This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
 #
@@ -9,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_08_02_203508) do
+ActiveRecord::Schema.define(version: 2022_08_05_004551) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,12 +26,14 @@ ActiveRecord::Schema.define(version: 2022_08_02_203508) do
   end
 
   create_table "schoolfees", force: :cascade do |t|
-    t.integer "classroom_id"
-    t.integer "student_id"
+    t.bigint "classroom_id"
+    t.bigint "student_id"
     t.string "description"
     t.integer "ammount"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["classroom_id"], name: "index_schoolfees_on_classroom_id"
+    t.index ["student_id"], name: "index_schoolfees_on_student_id"
   end
 
   create_table "schools", force: :cascade do |t|
@@ -59,4 +62,14 @@ ActiveRecord::Schema.define(version: 2022_08_02_203508) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "users", force: :cascade do |t|
+    t.string "first_name"
+    t.string "last_name"
+    t.string "email"
+    t.string "password_digest"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  add_foreign_key "schoolfees", "students"
 end
