@@ -124,69 +124,69 @@ Student.create([
     }
 ])
  
-# puts "🌴🌴🌴 Seeding Student. Done!!🌴🌴🌴"
-# puts 
-# puts ""
-# puts "Seeding Classrooms 🌱🌱🌱🌱🌱🌱🌱🌱🌱"
-# puts "        🌱🌱🌱🌱🌱🌱🌱🌱🌱"
-# puts "        🌱🌱🌱🌱🌱🌱🌱🌱🌱"
-# # Level.destroy_all
+puts "🌴🌴🌴 Seeding Student. Done!!🌴🌴🌴"
+puts 
+puts ""
+puts "Seeding Classrooms 🌱🌱🌱🌱🌱🌱🌱🌱🌱"
+puts "        🌱🌱🌱🌱🌱🌱🌱🌱🌱"
+puts "        🌱🌱🌱🌱🌱🌱🌱🌱🌱"
+# Level.destroy_all
 
-# Schoolfee.create([
-#     {
-#         student_id: 1,
-#         description: "PG/2020",
-#         classroom_id: 1 ,
-#         ammount: 300
+Schoolfee.create([
+    {
+        student_id: 1,
+        description: "PG/2020",
+        classroom_id: 1 ,
+        ammount: 300
 
-#     },
-#     {
-#         student_id: 3,
-#         description: "PP1/2020",
-#         classroom_id: 1 ,
-#         ammount: 300
+    },
+    {
+        student_id: 3,
+        description: "PP1/2020",
+        classroom_id: 1 ,
+        ammount: 300
 
-#     },
-#     {
-#         student_id: 2,
-#         description: "PP2/2020",
-#         classroom_id: 1 ,
-#         ammount: 400
+    },
+    {
+        student_id: 2,
+        description: "PP2/2020",
+        classroom_id: 1 ,
+        ammount: 400
 
-#     },
-#     {
-#         student_id: 1,
-#         description: "G1/2020",
-#         classroom_id: 1 ,
-#         ammount: 300
+    },
+    {
+        student_id: 1,
+        description: "G1/2020",
+        classroom_id: 1 ,
+        ammount: 300
 
-#     },
-#     {
-#         student_id: 4,
-#         description: "G2/2020",
-#         classroom_id: 2 ,
-#         ammount: 300
+    },
+    {
+        student_id: 4,
+        description: "G2/2020",
+        classroom_id: 2 ,
+        ammount: 300
 
-#     },
-#     {
-#         student_id: 5,
-#         description: "G3/2020",
-#         classroom_id: 2 ,
-#         ammount: 300
+    },
+    {
+        student_id: 5,
+        description: "G3/2020",
+        classroom_id: 2 ,
+        ammount: 300
 
-#     },
-#     {
-#         student_id: 8,
-#         description: "G4/2020",
-#         classroom_id: 3 ,
-#         ammount: 300
+    },
+    {
+        student_id: 8,
+        description: "G4/2020",
+        classroom_id: 3 ,
+        ammount: 300
 
-#     }
-# ])
+    }
+])
 
-# puts "🌴🌴🌴Seeding Schoolfees.Done!!🌴🌴🌴"
+puts "🌴🌴🌴Seeding Schoolfees.Done!!🌴🌴🌴"
 
-# puts 
+puts 
 
 puts 
 puts ""
