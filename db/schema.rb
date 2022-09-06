@@ -10,48 +10,37 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_08_05_004551) do
+ActiveRecord::Schema.define(version: 2022_09_05_193327) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "classrooms", force: :cascade do |t|
-    t.integer "school_id"
-    t.integer "student_id"
     t.string "title"
     t.string "name"
     t.string "timeline"
+    t.integer "school_id"
+    t.integer "student_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "schoolfees", force: :cascade do |t|
-    t.bigint "classroom_id"
-    t.bigint "student_id"
+    t.integer "classroom_id"
+    t.integer "student_id"
     t.string "description"
     t.integer "ammount"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["classroom_id"], name: "index_schoolfees_on_classroom_id"
-    t.index ["student_id"], name: "index_schoolfees_on_student_id"
   end
 
   create_table "schools", force: :cascade do |t|
     t.string "name"
     t.string "location"
+    t.string "email"
+    t.string "phone"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "student_schoolfees", force: :cascade do |t|
-    t.bigint "student_id"
-    t.bigint "schoolfee_id"
-    t.bigint "classroom_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["classroom_id"], name: "index_student_schoolfees_on_classroom_id"
-    t.index ["schoolfee_id"], name: "index_student_schoolfees_on_schoolfee_id"
-    t.index ["student_id"], name: "index_student_schoolfees_on_student_id"
   end
 
   create_table "students", force: :cascade do |t|
@@ -62,14 +51,4 @@ ActiveRecord::Schema.define(version: 2022_08_05_004551) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "users", force: :cascade do |t|
-    t.string "first_name"
-    t.string "last_name"
-    t.string "email"
-    t.string "password_digest"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  add_foreign_key "schoolfees", "students"
 end
